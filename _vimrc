@@ -1,7 +1,7 @@
 set nocompatible
 filetype off
 
-set rtp+=~/dotfiles/vimfiles/vundle.git/
+set rtp+=~/.vim/vundle.git/
 call vundle#rc()
 Bundle 'Shougo/neocomplcache'
 Bundle 'Shougo/unite.vim'
