@@ -1,11 +1,10 @@
-if has('gui_macvim')
-    colorscheme murphy
-    set transparency=10
-    set guifont=Osaka-Mono:h14
-    set lines=30 columns=80 " ウィンドウサイズの指定
-    set guifont=Ricty:h16
-"    set guioptions+=a
-"    set clipboard=unnamed,autoselect
-endif
+" 色設定
+colorscheme murphy
 
+" ウィンドウの大きさ
+:set lines=30
+:set columns=100
+
+" 半透明指定
+:set transparency=20
 
