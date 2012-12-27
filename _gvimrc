@@ -2,9 +2,11 @@
 colorscheme murphy
 
 " ウィンドウの大きさ
-:set lines=30
-:set columns=100
+:set lines=50
+:set columns=130
 
 " 半透明指定
 :set transparency=20
+
+:set guifont=Ricty:h18
 

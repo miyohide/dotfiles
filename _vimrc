@@ -11,9 +11,13 @@ NeoBundle 'Shougo/neocomplcache.git'
 NeoBundle 'Shougo/neobundle.vim.git'
 NeoBundle 'Shougo/unite.vim.git'
 NeoBundle 'Shougo/vimshell.git'
+NeoBundle 'Shougo/vimfiler.git'
 NeoBundle 'thinca/vim-quickrun.git'
 NeoBundle 'tpope/vim-rails.git'
 NeoBundle 'mattn/zencoding-vim'
+NeoBundle 'tomtom/tcomment_vim.git'
+
+" NeoBundle 'scrooloose/nerdtree'
 
 filetype plugin on
 filetype indent on
@@ -48,6 +52,8 @@ syntax on
 
 " Ruby用の設定
 autocmd FileType ruby set ai tabstop=3 shiftwidth=3 softtabstop=0 et
+" テキストモードの時の横幅は無制限
+autocmd FileType text set ai textwidth=0 et
 
 "------------------------------------
 " unite.vim
@@ -70,3 +76,5 @@ noremap <C-U><C-A> :Unite UniteWithBufferDir -buffer-name=files buffer file_mru 
 au FileType unite nnoremap <silent> <buffer> <ESC><ESC> :q<CR>
 au FileType unite inoremap <silent> <buffer> <ESC><ESC> <ESC>:q<CR>
 
+" quick-run
+set splitbelow "新しいウィンドウを下に開く
