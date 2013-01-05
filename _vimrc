@@ -24,6 +24,8 @@ filetype indent on
 
 " ステータスラインの設定（ファイル名、タイプ、フォーマット、エンコード、行数）
 :set statusline=%F%m%r%h%w\%=[TYPE=%Y]\[FORMAT=%{&ff}]\[ENC=%{&fileencoding}]\[LOW=%l/%L]
+" ステータスラインを常に表示
+:set laststatus=2
 " バックアップファイルの作り先の指定
 :set backupdir=$HOME/vim_backupdir
 :set directory=$HOME/vim_backupdir
