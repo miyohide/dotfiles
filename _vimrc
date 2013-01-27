@@ -8,6 +8,7 @@ if has('vim_starting')
 endif
 
 NeoBundle 'Shougo/neocomplcache.git'
+NeoBundle 'Shougo/neosnippet.git'
 NeoBundle 'Shougo/neobundle.vim.git'
 NeoBundle 'Shougo/unite.vim.git'
 NeoBundle 'Shougo/vimshell.git'
@@ -17,7 +18,9 @@ NeoBundle 'tpope/vim-rails.git'
 NeoBundle 'mattn/zencoding-vim'
 NeoBundle 'tomtom/tcomment_vim.git'
 
-" NeoBundle 'scrooloose/nerdtree'
+NeoBundle 'scrooloose/nerdtree'
+NeoBundle 'vim-scripts/ruby-matchit.git' " % to jump from end
+NeoBundle 'vim-scripts/DrawIt.git'
 
 filetype plugin on
 filetype indent on
@@ -80,3 +83,20 @@ au FileType unite inoremap <silent> <buffer> <ESC><ESC> <ESC>:q<CR>
 
 " quick-run
 set splitbelow "新しいウィンドウを下に開く
+
+" Neosnippet
+
+" Plugin key-mappings.
+imap <C-k>     <Plug>(neosnippet_expand_or_jump)
+smap <C-k>     <Plug>(neosnippet_expand_or_jump)
+
+" SuperTab like snippets behavior.
+imap <expr><TAB> neosnippet#expandable_or_jumpable() ? "\<Plug>(neosnippet_expand_or_jump)" : pumvisible() ? "\<C-n>" : "\<TAB>"
+smap <expr><TAB> neosnippet#expandable_or_jumpable() ? "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
+
+" For snippet_complete marker.
+if has('conceal')
+  set conceallevel=2 concealcursor=i
+endif
+
+
