@@ -22,6 +22,14 @@ NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'vim-scripts/ruby-matchit.git' " % to jump from end
 NeoBundle 'vim-scripts/DrawIt.git'
 
+NeoBundle 'hail2u/vim-css3-syntax'
+NeoBundle 'taichouchou2/html5.vim'
+NeoBundle 'taichouchou2/vim-javascript'
+NeoBundle 'kchmck/vim-coffee-script'
+NeoBundle 'tpope/vim-haml'
+
+NeoBundle 'tpope/vim-endwise'
+
 filetype plugin on
 filetype indent on
 
