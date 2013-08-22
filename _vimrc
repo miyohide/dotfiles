@@ -29,6 +29,7 @@ NeoBundle 'kchmck/vim-coffee-script'
 NeoBundle 'tpope/vim-haml'
 
 NeoBundle 'tpope/vim-endwise'
+NeoBundle 'tpope/vim-fugitive'
 
 filetype plugin on
 filetype indent on
