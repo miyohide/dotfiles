@@ -15,7 +15,7 @@ NeoBundle 'Shougo/vimshell.git'
 NeoBundle 'Shougo/vimfiler.git'
 NeoBundle 'thinca/vim-quickrun.git'
 NeoBundle 'tpope/vim-rails.git'
-NeoBundle 'mattn/zencoding-vim'
+NeoBundle 'mattn/emmet-vim'
 NeoBundle 'tomtom/tcomment_vim.git'
 
 NeoBundle 'scrooloose/nerdtree'
@@ -30,6 +30,8 @@ NeoBundle 'tpope/vim-haml'
 
 NeoBundle 'tpope/vim-endwise'
 NeoBundle 'tpope/vim-fugitive'
+
+NeoBundle 'tpope/vim-markdown'
 
 filetype plugin on
 filetype indent on
@@ -68,7 +70,7 @@ syntax on
 autocmd FileType ruby set ai tabstop=3 shiftwidth=3 softtabstop=0 et
 " テキストモードの時の横幅は無制限
 autocmd FileType text set ai textwidth=0 et
-
+autocmd FileType markdown set ai textwidth=0 et
 "------------------------------------
 " unite.vim
 "------------------------------------
