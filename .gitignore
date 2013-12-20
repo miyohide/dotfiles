@@ -2,3 +2,5 @@ vimfiles/bundle/
 *~
 *.swp
 
+.bundle
+.vim
