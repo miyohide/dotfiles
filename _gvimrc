@@ -2,7 +2,7 @@
 colorscheme murphy
 
 " ウィンドウの大きさ
-:set lines=50
+:set lines=30
 :set columns=130
 
 " 半透明指定
