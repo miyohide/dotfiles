@@ -15,7 +15,7 @@ NeoBundle 'Shougo/neocomplcache'
 NeoBundle 'Shougo/neosnippet'
 NeoBundle 'tpope/vim-rails'
 NeoBundle 'tpope/vim-endwise'
-
+NeoBundle 'thinca/vim-quickrun'
 " NeoBundle 'Shougo/vimshell.git'
 " NeoBundle 'Shougo/vimfiler.git'
 " NeoBundle 'thinca/vim-quickrun.git'
@@ -180,5 +180,16 @@ aug END
 aug RailsDictSetting
   au!
 aug END
+
+"RSpec対応（vim-quickrun）
+"横分割
+let g:quickrun_config = {'*': {'split': ''}}
+set splitbelow
+set splitright
+let g:quickrun_config['ruby.rspec'] = {'command': 'rspec', 'cmdopt': '$HOME/.rbenv/shims/bundle exec', 'exec': '%o %c %s'}
+augroup RSpec
+  autocmd!
+  autocmd BufWinEnter,BufNewFile *_spec.rb set filetype=ruby.rspec
+augroup END 
 
 
