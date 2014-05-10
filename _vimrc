@@ -74,6 +74,9 @@ autocmd FileType ruby set ai tabstop=3 shiftwidth=3 softtabstop=0 et
 autocmd FileType text set ai textwidth=0 et
 autocmd FileType markdown set ai textwidth=0 et
 
+" Vim 7.4.227から有効化されたundofileの生成を無効化
+:set noundofile
+
 " Unite
 let g:unite_enable_start_insert=1
 let g:unite_source_history_yank_enable =1
