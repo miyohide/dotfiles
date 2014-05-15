@@ -77,6 +77,9 @@ autocmd FileType markdown set ai textwidth=0 et
 " Vim 7.4.227から有効化されたundofileの生成を無効化
 :set noundofile
 
+" 音を消す
+set vb t_vb=
+
 " Unite
 let g:unite_enable_start_insert=1
 let g:unite_source_history_yank_enable =1
