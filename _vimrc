@@ -19,6 +19,7 @@ NeoBundle 'tpope/vim-rails'
 NeoBundle 'tpope/vim-endwise'
 NeoBundle 'thinca/vim-quickrun'
 NeoBundle 'othree/html5.vim'
+NeoBundle 'h1mesuke/vim-alignta'
 
 " NeoBundle 'Shougo/vimshell.git'
 " NeoBundle 'Shougo/vimfiler.git'
