@@ -5,7 +5,7 @@
 
 1. git cloneする
 
-git clone https://github.com/miyohide/dotfiles.git
+`git clone https://github.com/miyohide/dotfiles.git`
 
 2. vim用のバックアップ用ディレクトリを作る
 
@@ -13,7 +13,7 @@ git clone https://github.com/miyohide/dotfiles.git
 
 3. git cloneでneobundleを入れる
 
-`cd ~/dotfiles`でカレントディレクトリを移動して、`git clone https://github.com/Shougo/neobundle.vim ~/dotfiles/.vim/neobundle.vim.git`
+`git clone https://github.com/Shougo/neobundle.vim ~/dotfiles/.vim/bundle/neobundle.vim`
 
 4. シンボリックリンクを作成する
 
