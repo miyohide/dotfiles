@@ -22,10 +22,11 @@ NeoBundle 'thinca/vim-quickrun'
 NeoBundle 'othree/html5.vim'
 NeoBundle 'h1mesuke/vim-alignta'
 NeoBundle 'nathanaelkane/vim-indent-guides'
+NeoBundle 'tpope/vim-fugitive'
+NeoBundle 'vim-scripts/AnsiEsc.vim'
 
 " NeoBundle 'Shougo/vimshell.git'
 " NeoBundle 'Shougo/vimfiler.git'
-" NeoBundle 'thinca/vim-quickrun.git'
 " 
 " NeoBundle 'vim-scripts/ruby-matchit.git' " % to jump from end
 " NeoBundle 'vim-scripts/DrawIt.git'
@@ -35,9 +36,6 @@ NeoBundle 'nathanaelkane/vim-indent-guides'
 " NeoBundle 'taichouchou2/vim-javascript'
 " NeoBundle 'kchmck/vim-coffee-script'
 " NeoBundle 'tpope/vim-haml'
-" 
-" NeoBundle 'tpope/vim-fugitive'
-" 
 " NeoBundle 'tpope/vim-markdown'
 " 
 filetype plugin indent on
@@ -213,4 +211,9 @@ let g:html5_aria_attributes_complete = 1
 
 " vimを立ち上げたときに、自動的にvim-indent-guidesをオンにする
 let g:indent_guides_enable_on_vim_startup = 1
+
+" grep検索の実行後にQuickFix Listを出力する
+autocmd QuickFixCmdPost *grep* cwindow
+" ステータス行に現在のgitブランチを表示する
+set statusline+=%{fugitive#statusline()}
 
