@@ -17,9 +17,11 @@ NeoBundle 'Shougo/neosnippet'
 NeoBundle 'Shougo/neosnippet-snippets'
 NeoBundle 'tpope/vim-rails'
 NeoBundle 'tpope/vim-endwise'
+NeoBundle 'tpope/vim-surround'
 NeoBundle 'thinca/vim-quickrun'
 NeoBundle 'othree/html5.vim'
 NeoBundle 'h1mesuke/vim-alignta'
+NeoBundle 'nathanaelkane/vim-indent-guides'
 
 " NeoBundle 'Shougo/vimshell.git'
 " NeoBundle 'Shougo/vimfiler.git'
@@ -74,7 +76,7 @@ syntax on
 :set showmatch
 
 " Ruby用の設定
-autocmd FileType ruby set ai tabstop=3 shiftwidth=3 softtabstop=0 et
+autocmd FileType ruby set ai tabstop=2 shiftwidth=2 softtabstop=0 et
 " テキストモードの時の横幅は無制限
 autocmd FileType text set ai textwidth=0 et
 autocmd FileType markdown set ai textwidth=0 et
@@ -208,4 +210,7 @@ let g:html5_event_handler_attributes_complete = 1
 let g:html5_rdfa_attributes_complete = 1
 let g:html5_microdata_attributes_complete = 1
 let g:html5_aria_attributes_complete = 1
+
+" vimを立ち上げたときに、自動的にvim-indent-guidesをオンにする
+let g:indent_guides_enable_on_vim_startup = 1
 
