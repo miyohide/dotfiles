@@ -25,6 +25,8 @@ NeoBundle 'nathanaelkane/vim-indent-guides'
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'vim-scripts/AnsiEsc.vim'
 
+NeoBundle 'godlygeek/tabular'
+NeoBundle 'plasticboy/vim-markdown'
 " NeoBundle 'Shougo/vimshell.git'
 " NeoBundle 'Shougo/vimfiler.git'
 " 
@@ -36,7 +38,6 @@ NeoBundle 'vim-scripts/AnsiEsc.vim'
 " NeoBundle 'taichouchou2/vim-javascript'
 " NeoBundle 'kchmck/vim-coffee-script'
 " NeoBundle 'tpope/vim-haml'
-" NeoBundle 'tpope/vim-markdown'
 " 
 filetype plugin indent on
 
