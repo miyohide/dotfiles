@@ -27,6 +27,7 @@ NeoBundle 'vim-scripts/AnsiEsc.vim'
 
 NeoBundle 'godlygeek/tabular'
 NeoBundle 'plasticboy/vim-markdown'
+NeoBundle 'basyura/unite-rails'
 " NeoBundle 'Shougo/vimshell.git'
 " NeoBundle 'Shougo/vimfiler.git'
 " 
@@ -87,14 +88,21 @@ autocmd FileType markdown set ai textwidth=0 et
 set vb t_vb=
 
 " Unite
+" Unite prefix key.
+nnoremap [unitee] <Nop>
+nmap     <Space>u [unite]
+" Unite keymap
 let g:unite_enable_start_insert=1
 let g:unite_source_history_yank_enable =1
 let g:unite_source_file_mru_limit = 200
-nnoremap <silent> ,uy :<C-u>Unite history/yank<CR>
-nnoremap <silent> ,ub :<C-u>Unite buffer<CR>
-nnoremap <silent> ,uf :<C-u>UniteWithBufferDir -buffer-name=files file<CR>
-nnoremap <silent> ,ur :<C-u>Unite -buffer-name=register register<CR>
-nnoremap <silent> ,uu :<C-u>Unite file_mru buffer<CR>
+nnoremap <silent> [unite]f :<C-u>Unite<Space>file<CR>
+nnoremap <silent> [unite]g :<C-u>Unite<Space>grep<CR>
+nnoremap <silent> [unite]b :<C-u>Unite<Space>buffer<CR>
+nnoremap <silent> [unite]m :<C-u>Unite<Space>file_mru<CR>
+nnoremap <silent> [unite]h :<C-u>Unite<Space>history/yank<CR>
+
+" unite-railsの一部キーマッピング。それぞれに結び付けたいんだけどどうすればいいんだろう
+nnoremap <C-x> :Unite rails/
 " unite.vim上でのキーマッピング
 autocmd FileType unite call s:unite_my_settings()
 function! s:unite_my_settings()
