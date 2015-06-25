@@ -26,7 +26,8 @@ NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'vim-scripts/AnsiEsc.vim'
 
 NeoBundle 'godlygeek/tabular'
-NeoBundle 'plasticboy/vim-markdown'
+" NeoBundle 'plasticboy/vim-markdown'
+NeoBundle 'rcmdnk/vim-markdown'
 NeoBundle 'basyura/unite-rails'
 " NeoBundle 'Shougo/vimshell.git'
 " NeoBundle 'Shougo/vimfiler.git'
@@ -40,6 +41,9 @@ NeoBundle 'basyura/unite-rails'
 " NeoBundle 'kchmck/vim-coffee-script'
 " NeoBundle 'tpope/vim-haml'
 " 
+NeoBundle 'pangloss/vim-javascript'
+NeoBundle 'mxw/vim-jsx'
+
 filetype plugin indent on
 
 " 色
