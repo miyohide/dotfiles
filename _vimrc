@@ -7,7 +7,7 @@ call neobundle#begin(expand('~/dotfiles/.vim/bundle'))
 NeoBundleFetch 'Shougo/neobundle.vim'
 call neobundle#end()
 
-NeoBundle 'Shougo/unite.vim'
+NeoBundle 'Shougo/unite.vim', 'cec560e'
 NeoBundle 'Shougo/neomru.vim'
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'mattn/emmet-vim'
@@ -43,6 +43,7 @@ NeoBundle 'basyura/unite-rails'
 " 
 NeoBundle 'pangloss/vim-javascript'
 NeoBundle 'mxw/vim-jsx'
+NeoBundle 'elzr/vim-json'
 
 filetype plugin indent on
 
@@ -99,7 +100,7 @@ nmap     <Space>u [unite]
 let g:unite_enable_start_insert=1
 let g:unite_source_history_yank_enable =1
 let g:unite_source_file_mru_limit = 200
-nnoremap <silent> [unite]f :<C-u>Unite<Space>file<CR>
+nnoremap <silent> [unite]f :<C-u>Unite<Space>file file/new -buffer-name=file<CR>
 nnoremap <silent> [unite]g :<C-u>Unite<Space>grep<CR>
 nnoremap <silent> [unite]b :<C-u>Unite<Space>buffer<CR>
 nnoremap <silent> [unite]m :<C-u>Unite<Space>file_mru<CR>
@@ -230,3 +231,5 @@ autocmd QuickFixCmdPost *grep* cwindow
 " ステータス行に現在のgitブランチを表示する
 set statusline+=%{fugitive#statusline()}
 
+" vim-jsonでダブルクオートを表示しない機能をオフにする
+let g:vim_json_syntax_conceal = 0
