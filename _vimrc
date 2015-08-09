@@ -29,6 +29,7 @@ NeoBundle 'godlygeek/tabular'
 " NeoBundle 'plasticboy/vim-markdown'
 NeoBundle 'rcmdnk/vim-markdown'
 NeoBundle 'basyura/unite-rails'
+NeoBundle 'kana/vim-tabpagecd'
 " NeoBundle 'Shougo/vimshell.git'
 " NeoBundle 'Shougo/vimfiler.git'
 " 
