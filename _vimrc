@@ -5,7 +5,6 @@ endif
 
 call neobundle#begin(expand('~/dotfiles/.vim/bundle'))
 NeoBundleFetch 'Shougo/neobundle.vim'
-call neobundle#end()
 
 NeoBundle 'Shougo/unite.vim', 'cec560e'
 NeoBundle 'Shougo/neomru.vim'
@@ -45,6 +44,8 @@ NeoBundle 'kana/vim-tabpagecd'
 NeoBundle 'pangloss/vim-javascript'
 NeoBundle 'mxw/vim-jsx'
 NeoBundle 'elzr/vim-json'
+
+call neobundle#end()
 
 filetype plugin indent on
 
