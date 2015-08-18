@@ -3,3 +3,8 @@ vimfiles/bundle/
 *.swp
 
 .vim
+_atom/.apm/
+_atom/.node-gyp/
+_atom/packages/
+_atom/compile-cache/
+_atom/storage/
