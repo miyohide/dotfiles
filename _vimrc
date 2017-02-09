@@ -235,3 +235,7 @@ set statusline+=%{fugitive#statusline()}
 
 " vim-jsonでダブルクオートを表示しない機能をオフにする
 let g:vim_json_syntax_conceal = 0
+
+" vim-markdownで折りたたみをoffにする
+let g:vim_markdown_folding_disabled=1
+
