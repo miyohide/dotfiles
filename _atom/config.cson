@@ -1,5 +1,43 @@
 "*":
+  "atom-beautify":
+    general:
+      _analyticsUserId: "a5314a36-01f8-4d60-8cf7-ee8824558a2a"
+  "autocomplete-plus":
+    confirmCompletion: "tab"
+  core:
+    allowPendingPaneItems: false
+    telemetryConsent: "limited"
+    themes: [
+      "atom-light-ui"
+      "monokai"
+    ]
+  editor:
+    autoIndentOnPaste: false
+    fontFamily: "Ricty"
+    fontSize: 15
+    invisibles: {}
+    showIndentGuide: true
+    showInvisibles: true
+    softWrap: true
+    tabLength: 4
+  emmet: {}
   "exception-reporting":
     userId: "e2e7ee92-ad28-98d2-45df-29dd7e2f1db6"
+  "git-plus":
+    general:
+      _analyticsUserId: "7a3f32c9-5c12-4ee3-af7f-53c92a162a29"
+  linter: {}
+  "linter-jshint":
+    executablePath: "/usr/local/bin/jshint"
+  "linter-ruby": {}
   welcome:
     showOnStartup: false
+".erb.html.text":
+  editor:
+    tabLength: 2
+".ruby.source":
+  editor:
+    tabLength: 2
+".source.yaml":
+  editor:
+    tabLength: 2
