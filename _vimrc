@@ -70,7 +70,7 @@ nnoremap [unite] <Nop>
 nmap <Space>u [unite]
 
 "カレントディレクトリ下のファイル一覧。
-nnoremap <silent> [unite]f :<C-u>UniteWithBufferDir -buffer-name=files file file/new directory/new<CR>
+nnoremap <silent> [unite]f :<C-u>Unite -buffer-name=files file file/new directory/new<CR>
 "バッファ一覧
 nnoremap <silent> [unite]b :<C-u>Unite buffer<CR>
 
