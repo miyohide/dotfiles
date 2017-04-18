@@ -14,6 +14,7 @@ NeoBundle 'tpope/vim-endwise'
 NeoBundle 'nathanaelkane/vim-indent-guides'
 NeoBundle 'vim-scripts/AnsiEsc.vim'
 NeoBundle 'tomtom/tcomment_vim'
+NeoBundle 'tpope/vim-surround'
 
 call neobundle#end()
 
