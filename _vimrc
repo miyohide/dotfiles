@@ -65,6 +65,8 @@ autocmd FileType markdown set ai textwidth=0 et
 " 音を消す
 set vb t_vb=
 
+" 記号なども2バイトの幅に
+set ambiwidth=double
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Unite
 nnoremap [unite] <Nop>
